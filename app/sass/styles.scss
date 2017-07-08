@@ -1,0 +1,320 @@
+/////////////////////////
+///////// Colors
+/////////////////////////
+
+$ghost-white: #fcf9ff;
+$baby-powder: #fdfffc;
+$metallic-seaweed: #EACBD2;
+$keppel: #EA638C;
+$anti-flash-white: #f3eff5;
+$rich-black: #0b0014;
+$light-crimson: #EA638C;
+
+body {
+  background-color: $ghost-white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  color: $rich-black;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 1%;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 2%;
+}
+
+h4 {
+  padding: 1%;
+  font-style: italic;
+  color: $light-crimson;
+  opacity: .5;
+}
+
+footer {
+  padding: 1%;
+  background-color: $keppel;
+  color: $ghost-white;
+  font-size: 11px;
+}
+
+a {
+  color: $rich-black;
+  text-decoration: none;
+}
+
+ul{
+  margin-right: 2%;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  padding: 2px;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: right;
+  padding: 3% 1% 10%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+div.container a {
+  text-decoration: none;
+  padding: 10px 10px;
+  position: relative;
+}
+
+div.brackets a:before, div.brackets a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 26px;
+  top: 0;
+  transition: all 0.4s;
+}
+
+div.brackets a:before {
+  content: '[';
+  left: 0;
+  transform: translateX(5px);
+}
+
+div.brackets a:after {
+  content: ']';
+  right: 0;
+  transform: translateX(-5px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.intro {
+  margin-top: 2%;
+  color: $rich-black;
+  padding-bottom: 10%;
+  height: 85vh;
+}
+
+.about {
+  padding: 5%;
+  background-color: $metallic-seaweed;
+  color: $ghost-white;
+}
+
+.third {
+  padding: 5%;
+  background-color: $ghost-white;
+}
+
+.currently {
+  padding: 5%;
+  background-color: $metallic-seaweed;
+  color: $ghost-white;
+}
+
+.photography {
+  padding: 4.5% 0 8%;
+  background-color: $ghost-white;
+}
+
+.contact-info {
+  padding: 5%;
+  background-color: $keppel;
+  color: $ghost-white;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+iframe {
+  padding: 0 1% 0 1%;
+}
+
+.insta {
+  display: inline-flex;
+  width: 100vw;
+  padding: 0;
+}
+
+.half-column-left {
+  width: 50%;
+  float: left;
+}
+
+.half-column-right {
+  width: 50%;
+  float: right;
+}
+
+.social-media {
+  text-align: center;
+  color: $baby-powder;
+  padding: 0.5%;
+}
+
+.social-media:hover {
+  color: $rich-black;
+}
+
+.size-20 {
+  font-size: 20px;
+}
+
+.logo {
+  text-align:center;
+}
+
+svg {
+  width: 25%;
+  height: 25%;
+}
+
+.castle {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 5;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 100s linear forwards;
+  -o-animation: dash 100s linear forwards;
+  -moz-animation: dash 100s linear forwards;
+  animation: dash 100s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 5000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate {
+  transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+}
+
+.thing.animate {
+  transform: translate(-5em, 0);
+}
+
+.about-words {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.code {
+  text-decoration: none;
+  text-transform: none;
+  font-size: 32px;
+}
+
+.mylink {
+  color: $ghost-white;
+  text-decoration: underline;
+}
+
+.mylink:hover {
+  color: $metallic-seaweed;
+}
+
+.profile {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.name {
+  padding: 1% 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header-icon {
+  font-size: 70px;
+  line-height: 1px;
+}
+
+.brand {
+  -webkit-animation-duration: 1.25s;
+}
+
+.intro-me {
+  -webkit-animation-delay: 1.3s;
+  font-size: 16px;
+}
+
+.quote {
+  -webkit-animation-delay: 1.8s;
+}
+
+.code-info {
+  line-height: 30px;
+}
+
+.links {
+  color: $anti-flash-white;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 2em;
+}
+
+.reading {
+  & img {
+    width: 45%;
+  }
+}
+
+.watching {
+  & img {
+    width: 45%;
+  }
+}
+
+.working {
+  & img {
+    width: 50%;
+  }
+}
+
+.camera {
+  padding-bottom: 2%;
+}
+
+.columns:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.find-me {
+  padding-bottom: 7%;
+  font-size: 14px;
+  font-style: normal;
+}
